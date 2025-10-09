@@ -1,0 +1,46 @@
+.userlist {
+    min-height: 100vh;
+    padding: 40px 16px;
+    background: #111427;
+    color: #fff;
+}
+
+.ul-title {
+    text-align: center;
+    margin: 0 0 16px;
+    font-size: clamp(28px, 5vw, 44px);
+    letter-spacing: 1px;
+}
+
+.ul-btn {
+    display: block;
+    margin: 0 auto 24px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #e94560;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .12s ease, background .2s ease;
+}
+.ul-btn:hover:not(:disabled) { 
+    transform: translateY(-2px); background: #ff6fae; 
+}
+.ul-btn:disabled { 
+    opacity: .7; cursor: default; 
+}
+
+.ul-error { 
+    text-align: center; color: #ffb4b4; 
+}
+
+.ul-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    max-width: 1100px;
+}

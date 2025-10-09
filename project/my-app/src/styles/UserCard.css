@@ -1,0 +1,34 @@
+.uc-card {
+    background: #1b1f3a;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    align-items: center;
+    transition: transform .12s ease, box-shadow .2s ease;
+}
+.uc-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.uc-avatar {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    background: #0d1026;
+}
+
+.uc-body { min-width: 0; }
+.uc-name { margin: 2px 0; font-size: 18px; }
+.uc-username { margin: 0; color: #b5b8d1; }
+.uc-meta {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #d6d9f2;
+    display: flex; flex-wrap: wrap; gap: 6px;
+}
+.uc-link { color: #7ad9ff; text-decoration: none; }
+.uc-link:hover { text-decoration: underline; }
