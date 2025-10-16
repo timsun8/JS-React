@@ -44,3 +44,33 @@
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     max-width: 1100px;
 }
+
+.ul-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ul-search input {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  width: 200px;
+  background: #1b1f3a;
+  color: white;
+}
+
+.clear-btn {
+  background: #e94560;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-btn:hover {
+  background: #ff6fae;
+}
