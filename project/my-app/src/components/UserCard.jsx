@@ -15,9 +15,7 @@ return (
         <p className="uc-username">@{username}</p>
         <div className="uc-meta">
           <a href={`mailto:${email}`} className="uc-link">{email}</a>
-          <span>·</span>
           <span>{phone}</span>
-          <span>·</span>
           <a
             href={`https://${website}`}
             target="_blank"
@@ -26,7 +24,7 @@ return (
           >
             {website}
           </a>
-          {address?.city && <span> · {address.city}</span>}
+          {address?.city && <span> {address.city}</span>}
         </div>
       </div>
     </article>

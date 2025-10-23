@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/UserList.css";
 import UserCard from "./UserCard";
 
@@ -23,8 +23,13 @@ async function loadUsers() {
   }
 }
 
+useEffect(() => {
+    loadUsers();
+}, []);
+
 const filteredUsers = users.filter((u) =>
-  u.name.toLowerCase().includes(search.toLowerCase())
+  u.name.toLowerCase().includes(search.toLowerCase()) ||
+  u.username.toLowerCase().includes(search.toLowerCase())
 );
 
 return (
